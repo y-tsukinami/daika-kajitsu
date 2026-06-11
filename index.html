@@ -1,3 +1,175 @@
-大果大阪青果本社果実部
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大果大阪青果 本社果実部 | 営業支援メニュー</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+        background: #f6f8fb;
+        color: #172B4D;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .page {
+        width: min(100%, 1080px);
+        background: #ffffff;
+        border-radius: 28px;
+        box-shadow: 0 24px 60px rgba(23, 43, 77, 0.12);
+        overflow: hidden;
+      }
+      .hero {
+        padding: 56px 48px 40px;
+        background: linear-gradient(135deg, #355cba 0%, #1f82ff 100%);
+        color: #fff;
+      }
+      .hero__eyebrow {
+        font-size: 0.95rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.9;
+        margin-bottom: 16px;
+      }
+      .hero__title {
+        margin: 0;
+        font-size: clamp(2.6rem, 3.8vw, 4.8rem);
+        line-height: 1.02;
+      }
+      .hero__subtitle {
+        margin: 24px 0 0;
+        max-width: 760px;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        opacity: 0.93;
+      }
+      .content {
+        padding: 40px 48px 56px;
+      }
+      .section-title {
+        margin: 0 0 24px;
+        font-size: 1.35rem;
+        letter-spacing: 0.01em;
+      }
+      .menu-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .card {
+        position: relative;
+        background: #f8fbff;
+        border: 1px solid rgba(42, 103, 255, 0.12);
+        border-radius: 22px;
+        padding: 26px 24px;
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 18px 36px rgba(56, 99, 196, 0.12);
+      }
+      .card__title {
+        margin: 0 0 10px;
+        font-size: 1.1rem;
+      }
+      .card__description {
+        margin: 0;
+        line-height: 1.75;
+        color: #4d618e;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 9px 16px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.18);
+        color: #fff;
+        font-size: 0.88rem;
+      }
+      .footer {
+        padding: 28px 48px 32px;
+        background: #f3f6fc;
+        color: #5c6f91;
+        font-size: 0.95rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 14px;
+      }
+      .footer__item {
+        flex: 1 1 260px;
+      }
+      @media (max-width: 640px) {
+        .hero { padding: 36px 24px 32px; }
+        .content { padding: 32px 24px 40px; }
+        .footer { padding: 22px 24px 28px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero__eyebrow">大果大阪青果 本社果実部</div>
+        <h1 class="hero__title">営業支援メニューで、果実ビジネスを次のレベルへ</h1>
+        <p class="hero__subtitle">現場の営業活動をサポートするための便利なメニューを一覧にまとめました。社内共有や進捗管理、提案資料作成まで、営業を強力にバックアップします。</p>
+      </section>
 
-営業支援メニュー
+      <section class="content">
+        <h2 class="section-title">ご利用可能なメニュー</h2>
+        <div class="menu-grid">
+          <article class="card">
+            <div>
+              <h3 class="card__title">取引先管理</h3>
+              <p class="card__description">顧客情報、連絡履歴、訪問予定をスムーズに整理できます。営業先との関係性を強化するための基本機能です。</p>
+            </div>
+            <div class="badge">Sales</div>
+          </article>
+
+          <article class="card">
+            <div>
+              <h3 class="card__title">入札・見積サポート</h3>
+              <p class="card__description">果実の価格表や条件をすばやく照合し、見積書の作成を効率化します。正確な提案で受注率アップを目指します。</p>
+            </div>
+            <div class="badge">Proposal</div>
+          </article>
+
+          <article class="card">
+            <div>
+              <h3 class="card__title">メーカー/産地一覧</h3>
+              <p class="card__description">各産地や仕入先の情報をひと目で把握。品質や納期、入荷状況の管理に役立ちます。</p>
+            </div>
+            <div class="badge">Supply</div>
+          </article>
+
+          <article class="card">
+            <div>
+              <h3 class="card__title">営業成果レポート</h3>
+              <p class="card__description">月次・四半期ごとの売上データや進捗をまとめて可視化。次の戦略立案に必要な情報を提供します。</p>
+            </div>
+            <div class="badge">Insight</div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__item">大果大阪青果 本社果実部</div>
+        <div class="footer__item">このページは営業支援向けの社内ポータルです。必要に応じて内容の追加やカスタマイズが可能です。</div>
+      </footer>
+    </main>
+  </body>
+</html>
